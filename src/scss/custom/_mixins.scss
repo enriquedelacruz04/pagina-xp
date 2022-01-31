@@ -1,0 +1,76 @@
+////////////////////////////////////////   box-sizing
+////////////////////////////////////////   box-sizing
+
+@mixin box-sizing($box-model) {
+    box-sizing: $box-model;
+}
+
+////////////////////////////////////////   botones
+////////////////////////////////////////   botones
+
+%btn {
+    padding: 0.5rem 1rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@mixin boton($color1, $color2) {
+    @extend %btn;
+    background-color: $color1;
+    color: $color2;
+    border: none;
+}
+
+@mixin boton-border($color1) {
+    @extend %btn;
+    border: 2px solid $color1;
+    color: $color1;
+}
+
+@mixin boton-border-hover($color1, $color2) {
+    border: 2px solid $color1;
+    background-color: $color1;
+    color: $color2;
+}
+
+////////////////////////////////////////  Media Queries
+////////////////////////////////////////  Media Queries
+
+@mixin telefono-mini {
+    @media only screen and (min-width: #{$telefono-mini}) {
+        @content;
+    }
+}
+@mixin telefono {
+    @media only screen and (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop-full {
+    @media only screen and (min-width: #{$desktop-full}) {
+        @content;
+    }
+}
+
+////////////////////////////////////////  Gradinete
+////////////////////////////////////////  Gradinete
+
+@mixin gradiente($color1, $color2) {
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+}

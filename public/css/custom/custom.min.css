@@ -1,0 +1,144 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 760px;
+  align-items: center;
+}
+.header__title {
+  margin: 3rem 0 2rem 0;
+}
+@media only screen and (min-width: 576px) {
+  .header__title {
+    margin: 6rem 0 1rem 0;
+  }
+}
+.header__title h1 {
+  font-weight: 500 !important;
+}
+.header__title span {
+  font-weight: 400 !important;
+  color: #b70f0f;
+  font-size: 1rem;
+}
+.header__logo img {
+  width: 100px;
+  margin: 7rem 0 2rem 0;
+}
+.header__sidebar {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 576px) {
+  .header__sidebar {
+    flex-direction: row;
+  }
+}
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header li {
+  list-style: none;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+}
+@media only screen and (min-width: 576px) {
+  .header li {
+    padding: 0rem 1rem;
+  }
+}
+
+footer {
+  font-size: 0.9rem;
+}
+footer .container {
+  margin-top: 10rem;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 576px) {
+  footer .container {
+    margin-bottom: 3rem;
+  }
+}
+footer p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+footer p span {
+  font-size: 0.8rem;
+  color: #b70f0f;
+}
+footer .list-unstyled {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 576px) {
+  footer .list-unstyled {
+    margin-bottom: 0;
+  }
+}
+footer li a {
+  color: rgba(0, 0, 0, 0.871);
+  padding: 0 1rem;
+}
+
+.hero h2 {
+  font-size: 1rem !important;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.trabajos {
+  margin-top: 4rem;
+}
+@media only screen and (min-width: 576px) {
+  .trabajos {
+    margin-top: 8rem;
+  }
+}
+
+.filosofia .cards .card-body {
+  margin-left: 0;
+}
+@media only screen and (min-width: 576px) {
+  .filosofia .cards .card-body {
+    margin-left: 2rem;
+  }
+}
+.filosofia .cards .card-text {
+  font-size: 0.8rem !important;
+}
+.filosofia .cards .card {
+  border: none !important;
+  margin: 3rem 0 !important;
+}
+
+.nosotros img {
+  border-radius: 5px;
+}
+.nosotros .card {
+  border: none !important;
+}
+.nosotros .card .card-title {
+  font-size: 1rem !important;
+}
+.nosotros .card .card-text {
+  font-size: 0.8rem !important;
+  line-height: 24px;
+}
+/*# sourceMappingURL=custom.min.css.map */
