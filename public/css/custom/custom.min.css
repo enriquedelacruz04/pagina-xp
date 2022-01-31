@@ -112,20 +112,30 @@ footer li a {
   }
 }
 
-.filosofia .cards .card-body {
-  margin-left: 0;
-}
-@media only screen and (min-width: 576px) {
-  .filosofia .cards .card-body {
-    margin-left: 2rem;
-  }
+.filosofia .cards .card-title {
+  font-size: 2rem !important;
+  letter-spacing: 4px;
+  font-weight: 300;
+  color: black;
 }
 .filosofia .cards .card-text {
-  font-size: 0.8rem !important;
+  font-size: 1rem !important;
 }
 .filosofia .cards .card {
   border: none !important;
   margin: 3rem 0 !important;
+}
+.filosofia .cards .filosofia-card-img {
+  position: relative;
+}
+.filosofia .cards .filosofia-card-img .text-abs {
+  position: absolute;
+  color: white;
+  font-weight: 100;
+  font-size: 3.5rem;
+  bottom: 15px;
+  left: 20px;
+  letter-spacing: 12px;
 }
 
 .nosotros img {
@@ -140,5 +150,103 @@ footer li a {
 .nosotros .card .card-text {
   font-size: 0.8rem !important;
   line-height: 24px;
+}
+
+.contact__container {
+  margin: 3rem auto 3rem auto;
+  width: 70%;
+  padding: 6rem 0 29rem 0;
+  position: relative;
+  border-radius: 5px;
+  position: relative;
+}
+@media only screen and (min-width: 430px) {
+  .contact__container {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .contact__container {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact__container {
+    width: 450px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact__container {
+    width: 700px;
+  }
+}
+.contact__container i {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  top: 24px;
+  left: 28px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 5rem 2rem;
+}
+.contact__input {
+  color: black;
+  outline: none;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #b5b5b5;
+  margin-bottom: 1rem;
+}
+.contact__input--area {
+  border: 1px solid #b5b5b5;
+  resize: none;
+}
+.contact__input::placeholder {
+  color: #8a8a8a;
+  font-size: 1rem;
+}
+.contact__submit {
+  position: absolute;
+  border-radius: 30px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #b70f0f;
+  color: #fff;
+  padding: 15px 35px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  right: -21px;
+  bottom: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.contact__submit:hover {
+  background-color: #b70f0f;
+  padding: 15px 45px;
+}
+.contact .social-media {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  background-color: #b70f0f;
+  padding-right: 1.5rem;
+  border-radius: 0 0 0 15px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.contact .social-media i {
+  font-size: 1.8rem;
+  padding: 1.5rem 1.8rem;
+  transition: all 0.5s;
+}
+.contact .social-media i:hover {
+  transform: scale(1.5);
 }
 /*# sourceMappingURL=custom.min.css.map */

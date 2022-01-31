@@ -131,7 +131,7 @@ footer {
 }
 
 //===========================================================
-// Paginas 
+// Paginas
 //===========================================================
 
 .trabajos {
@@ -143,20 +143,43 @@ footer {
 
 .filosofia {
     .cards {
-        .card-body {
-            margin-left: 0;
+        // .card-body {
+        //     margin-left: 0;
 
-            @include telefono {
-                margin-left: 2rem;
-            }
+        //     @include telefono {
+        //         margin-left: 2rem;
+        //     }
+        // }
+
+        .card-title{
+
+            font-size: 2rem !important;
+            letter-spacing: 4px;
+            font-weight: 300;
+            color: black;
+
         }
         .card-text {
-            font-size: 0.8rem !important;
+            font-size: 1rem !important;
         }
 
         .card {
             border: none !important;
             margin: 3rem 0 !important;
+        }
+
+        .filosofia-card-img {
+            position: relative;
+
+            .text-abs {
+                position: absolute;
+                color: white;
+                font-weight: 100;
+                font-size: 3.5rem;
+                bottom: 15px;
+                left: 20px;
+                letter-spacing: 12px;
+            }
         }
     }
 }
@@ -181,6 +204,115 @@ footer {
     }
 }
 
-// .clientes{
+.contact {
+    &__container {
+        // background-color: #1b1c3c;
+        margin: 3rem auto 3rem auto;
+        width: 70%;
+        padding: 6rem 0 29rem 0;
+        position: relative;
+        border-radius: 5px;
+        position: relative;
 
-// }
+        @include telefono-mini {
+            width: 300px;
+        }
+
+        @include telefono {
+            width: 350px;
+        }
+
+        @include tablet {
+            width: 450px;
+        }
+
+        @include desktop {
+            width: 700px;
+        }
+
+        i {
+            position: absolute;
+            color: white;
+            font-size: 2rem;
+            top: 24px;
+            left: 28px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem 5rem 2rem;
+    }
+
+    &__input {
+        color: black;
+        outline: none;
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #b5b5b5;
+        margin-bottom: 1rem;
+
+        // border-radius: 5px;
+        &--area {
+            border: 1px solid #b5b5b5;
+            resize: none;
+        }
+
+        &::placeholder {
+            color: #8a8a8a;
+            font-size: 1rem;
+        }
+    }
+
+    &__submit {
+        position: absolute;
+        border-radius: 30px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        background-color: $primario;
+        color: #fff;
+        padding: 15px 35px;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        right: -21px;
+        bottom: 20px;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: $primario;
+            padding: 15px 45px;
+        }
+    }
+
+    .social-media {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        background-color: $secundario;
+        padding-right: 1.5rem;
+        border-radius: 0 0 0 15px;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+            rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+            rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+        @include tablet {
+        }
+        i {
+            font-size: 1.8rem;
+            padding: 1.5rem 1.8rem;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
