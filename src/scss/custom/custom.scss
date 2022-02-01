@@ -139,6 +139,17 @@ footer {
     @include telefono {
         margin-top: 8rem;
     }
+
+
+    .card{
+
+        background-color: transparent !important;
+        border: none !important;
+    }
+    .card-footer {
+        background-color: transparent !important;
+        border: none !important;
+    }
 }
 
 .filosofia {
@@ -153,10 +164,8 @@ footer {
 
         transition: 0.5s;
 
-
-        &:hover{
+        &:hover {
             filter: opacity(0.9);
-
         }
 
         .card-title {

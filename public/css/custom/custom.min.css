@@ -111,6 +111,14 @@ footer li a {
     margin-top: 8rem;
   }
 }
+.trabajos .card {
+  background-color: transparent !important;
+  border: none !important;
+}
+.trabajos .card-footer {
+  background-color: transparent !important;
+  border: none !important;
+}
 
 .filosofia .cards {
   transition: 0.5s;
