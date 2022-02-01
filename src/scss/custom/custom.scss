@@ -151,13 +151,19 @@ footer {
         //     }
         // }
 
-        .card-title{
+        transition: 0.5s;
 
+
+        &:hover{
+            filter: opacity(0.9);
+
+        }
+
+        .card-title {
             font-size: 2rem !important;
             letter-spacing: 4px;
             font-weight: 300;
             color: black;
-
         }
         .card-text {
             font-size: 1rem !important;
@@ -185,6 +191,23 @@ footer {
 }
 
 .nosotros {
+    .nosotros-card-img {
+        position: relative;
+
+        .text-abs {
+            position: absolute;
+            bottom: 0;
+            // left: 15px;
+            text-align: center;
+            padding: 1rem 0.5rem;
+            width: 100%;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 100;
+            background-color: rgba(0, 0, 0, 0.727);
+        }
+    }
+
     img {
         border-radius: 5px;
     }
@@ -200,6 +223,54 @@ footer {
         .card-text {
             font-size: 0.8rem !important;
             line-height: 24px;
+        }
+    }
+}
+
+.servicios {
+    .col {
+        padding: 0 !important;
+    }
+    .card {
+        border: none !important;
+        border-radius: 0 !important;
+        transition: 0.5s;
+
+        &:hover {
+            // transform: scale(1.1);
+            filter: opacity(0.7);
+        }
+    }
+    .servicios-card-img {
+        position: relative;
+        display: flex;
+
+        .text-abs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            z-index: 99;
+            background-color: rgba(0, 0, 0, 0.529);
+
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 200;
+            p {
+                margin: 0;
+            }
+
+            // p {
+            //     // backdrop-filter: grayscale(0.5) opacity(0.8) /* ...and on and on... */;
+
+            //     // padding: 3rem 0.5rem;
+            //     // backdrop-filter: blur(10px);
+            // }
         }
     }
 }

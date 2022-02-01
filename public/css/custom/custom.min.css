@@ -112,6 +112,12 @@ footer li a {
   }
 }
 
+.filosofia .cards {
+  transition: 0.5s;
+}
+.filosofia .cards:hover {
+  filter: opacity(0.9);
+}
 .filosofia .cards .card-title {
   font-size: 2rem !important;
   letter-spacing: 4px;
@@ -138,6 +144,20 @@ footer li a {
   letter-spacing: 12px;
 }
 
+.nosotros .nosotros-card-img {
+  position: relative;
+}
+.nosotros .nosotros-card-img .text-abs {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 100;
+  background-color: rgba(0, 0, 0, 0.727);
+}
 .nosotros img {
   border-radius: 5px;
 }
@@ -150,6 +170,41 @@ footer li a {
 .nosotros .card .card-text {
   font-size: 0.8rem !important;
   line-height: 24px;
+}
+
+.servicios .col {
+  padding: 0 !important;
+}
+.servicios .card {
+  border: none !important;
+  border-radius: 0 !important;
+  transition: 0.5s;
+}
+.servicios .card:hover {
+  filter: opacity(0.7);
+}
+.servicios .servicios-card-img {
+  position: relative;
+  display: flex;
+}
+.servicios .servicios-card-img .text-abs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  color: white;
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.529);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+.servicios .servicios-card-img .text-abs p {
+  margin: 0;
 }
 
 .contact__container {
