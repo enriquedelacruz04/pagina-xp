@@ -208,12 +208,12 @@ footer li a {
 }
 @media only screen and (min-width: 992px) {
   .trabajos .trabajos-video-back .video-texto {
-    padding: 5rem 7rem 0rem 7rem;
+    padding: 8rem 7rem 0rem 7rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .trabajos .trabajos-video-back .video-texto {
-    padding: 8rem 7rem 0rem 7rem;
+    padding: 12rem 10rem 0rem 10rem;
   }
 }
 .trabajos .trabajos-video-back .video-texto h3 {
