@@ -119,7 +119,6 @@ footer li a {
   background-color: transparent !important;
   border: none !important;
 }
-
 .filosofia .cards {
   transition: 0.5s;
 }
@@ -167,7 +166,8 @@ footer li a {
   background-color: rgba(0, 0, 0, 0.727);
 }
 .nosotros img {
-  border-radius: 5px;
+  border-radius: 3px !important;
+  height: 340px;
 }
 .nosotros .card {
   border: none !important;
