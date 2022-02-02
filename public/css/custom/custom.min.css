@@ -119,6 +119,35 @@ footer li a {
   background-color: transparent !important;
   border: none !important;
 }
+.trabajos .trabajos-video {
+  margin: 2rem auto;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: url(../../video/video.mp4);
+}
+.trabajos video {
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+}
+.trabajos .text-video {
+  position: absolute;
+  color: white;
+  top: 2rem;
+  left: 3rem;
+}
+.trabajos .text-video h3 {
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+.trabajos .text-video p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  width: 50%;
+}
+
 .filosofia .cards {
   transition: 0.5s;
 }
@@ -167,7 +196,7 @@ footer li a {
 }
 .nosotros img {
   border-radius: 3px !important;
-  height: 340px;
+  height: 450px;
 }
 .nosotros .card {
   border: none !important;

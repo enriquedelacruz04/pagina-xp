@@ -140,9 +140,7 @@ footer {
         margin-top: 8rem;
     }
 
-
-    .card{
-
+    .card {
         background-color: transparent !important;
         border: none !important;
     }
@@ -151,8 +149,38 @@ footer {
         border: none !important;
     }
 
-    .trabajos-video{
-        
+    .trabajos-video {
+        margin: 2rem auto;
+        position: relative;
+        overflow: hidden;
+        // display: flex;
+        aspect-ratio: 16/9;
+        background: url(../../video/video.mp4);
+    }
+    video {
+        // min-width: 100%;
+        // min-height: 100vh;
+        width: 100%;
+        z-index: 1;
+        margin: 0 auto;
+    }
+
+    .text-video {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        top: 2rem;
+        left: 3rem;
+
+        h3 {
+            font-size: 4rem;
+            font-weight: 100;
+            letter-spacing: 10px;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            width: 50%;
+        }
     }
 }
 
@@ -223,7 +251,7 @@ footer {
 
     img {
         border-radius: 3px !important;
-        height: 340px;
+        height: 450px;
     }
 
     .card {
