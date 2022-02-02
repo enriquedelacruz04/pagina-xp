@@ -26,9 +26,9 @@ img {
   font-weight: 500 !important;
 }
 .header__title span {
-  font-weight: 400 !important;
+  font-weight: 300 !important;
   color: #b70f0f;
-  font-size: 1rem;
+  font-size: 60%;
 }
 .header__logo img {
   width: 100px;
