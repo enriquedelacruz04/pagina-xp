@@ -68,6 +68,13 @@
     }
 }
 
+
+@mixin desktop-x-full {
+    @media only screen and (min-width: #{$desktop-x-full}) {
+        @content;
+    }
+}
+
 ////////////////////////////////////////  Gradinete
 ////////////////////////////////////////  Gradinete
 

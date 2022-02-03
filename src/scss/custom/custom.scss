@@ -92,29 +92,37 @@ footer {
             margin-bottom: 3rem;
         }
     }
-    font-size: 0.9rem;
 
-    p {
-        font-size: 1.5rem;
+    .title {
+        font-size: 1.7rem;
         font-weight: 400;
         span {
-            font-size: 0.8rem;
+            font-size: 60%;
             color: $primario;
         }
     }
 
     .list-unstyled {
-        font-size: 1.5rem;
-
         margin-bottom: 2rem;
         @include telefono {
             margin-bottom: 0;
         }
     }
 
-    li a {
+    ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    li {
         color: rgba(0, 0, 0, 0.871);
-        padding: 0 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -124,9 +132,10 @@ footer {
 
 .hero {
     h2 {
-        font-size: 1rem !important;
+        font-size: 1.8rem !important;
         margin-top: 4rem;
         margin-bottom: 1rem;
+        font-weight: 200;
     }
 }
 
@@ -153,7 +162,7 @@ footer {
         margin: 2rem auto;
         position: relative;
         // display: flex;
-        aspect-ratio: 16/9;
+        // aspect-ratio: 16/9;
 
         video {
             // min-width: 100%;
@@ -206,10 +215,20 @@ footer {
 
     .trabajos-video-back {
         position: relative;
+        margin-bottom: 5rem;
         video {
             // min-width: 100%;
             // min-height: 100vh;
-            width: 100%;
+            // width: 100%;
+            height: 450px;
+            background-size: cover;
+            @include telefono {
+                height: 550px;
+            }
+            @include tablet {
+                width: 100%;
+                height: auto;
+            }
         }
 
         .video-texto {
@@ -224,37 +243,44 @@ footer {
             color: white;
             padding: 1rem 0.5rem 0rem 0.5rem;
 
-            @include telefono-mini {
-                padding: 1.5rem 2rem 0rem 2rem;
-                // padding: 3rem 6rem 5rem 6rem;
-            }
-            @include telefono {
-                padding: 4rem 4rem 0rem 4rem;
-                // padding: 3rem 6rem 5rem 6rem;
-            }
-            @include tablet {
-                padding: 4.5rem 5rem 0rem 5rem;
-                // padding: 3rem 6rem 5rem 6rem;
-            }
-            @include desktop {
-                padding: 8rem 7rem 0rem 7rem;
-                // padding: 3rem 6rem 5rem 6rem;
-            }
-            @include desktop-full {
-                padding: 12rem 10rem 0rem 10rem;
-                // padding: 3rem 6rem 5rem 6rem;
+            .texto {
+                width: 100%;
+                margin: 0 auto;
+                @include telefono-mini {
+                    width: 90%;
+                }
+                @include telefono {
+                    margin-top: 3rem;
+                    width: 80%;
+                }
+                @include tablet {
+                    margin-top: 4rem;
+                    width: 70%;
+                }
+                @include desktop {
+                    margin-top: 4rem;
+                    width: 60%;
+                }
+                @include desktop-full {
+                    margin-top: 10rem;
+                    width: 60%;
+                }
+                @include desktop-x-full {
+                    margin-top: 15rem;
+                    width: 50%;
+                }
             }
 
             h3 {
                 font-weight: 400;
 
-                font-size: 2rem;
-                margin: 0.5rem auto 1rem auto;
+                font-size: 2.5rem;
+                margin: 3rem auto 1rem auto;
 
-                @include telefono-mini {
-                    font-size: 2.2rem;
-                    margin: 0.5rem auto 1rem auto;
-                }
+                // @include telefono-mini {
+                //     font-size: 2.2rem;
+                //     margin: 0.5rem auto 1rem auto;
+                // }
 
                 @include telefono {
                     font-size: 3rem;
@@ -262,12 +288,16 @@ footer {
                 }
 
                 @include tablet {
-                    font-size: 4.8rem;
+                    font-size: 4.2rem;
                     margin: 0.8rem auto 1rem auto;
                 }
 
                 @include desktop {
                     font-size: 6rem;
+                    margin: 0.8rem auto 1rem auto;
+                }
+                @include desktop-x-full {
+                    font-size: 7rem;
                     margin: 0.8rem auto 1rem auto;
                 }
 
@@ -280,8 +310,8 @@ footer {
 
             p {
                 font-weight: 200;
-                margin: 2rem auto;
-                font-size: 0.8rem;
+                margin: 3rem auto;
+                font-size: 0.9rem;
 
                 @include telefono-mini {
                     font-size: 1rem;
@@ -292,10 +322,16 @@ footer {
                 }
 
                 @include tablet {
-                    font-size: 1.6rem;
+                    font-size: 1.3rem;
                 }
 
                 @include desktop {
+                    font-size: 1.6rem;
+                }
+                @include desktop-full {
+                    font-size: 1.8rem;
+                }
+                @include desktop-x-full {
                     font-size: 2rem;
                 }
             }
@@ -351,6 +387,7 @@ footer {
 }
 
 .nosotros {
+    margin-top: 8rem;
     .nosotros-card-img {
         position: relative;
 
@@ -370,7 +407,8 @@ footer {
 
     img {
         border-radius: 3px !important;
-        height: 450px;
+        // height: 430px;
+        aspect-ratio: 9/10;
     }
 
     .card {
@@ -398,8 +436,11 @@ footer {
         transition: 0.5s;
 
         &:hover {
-            // transform: scale(1.1);
-            filter: opacity(0.7);
+            .servicios-card-img {
+                // background-color: #b70f0f;
+                // filter: opacity(0.7);
+                // transform: scale(1.1);
+            }
         }
     }
     .servicios-card-img {
@@ -417,7 +458,7 @@ footer {
             color: rgb(255, 255, 255);
             position: absolute;
             z-index: 99;
-            background-color: rgba(0, 0, 0, 0.529);
+            background-color: #000000c4;
 
             text-align: center;
             font-size: 1.8rem;

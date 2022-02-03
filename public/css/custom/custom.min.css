@@ -63,9 +63,6 @@ img {
   }
 }
 
-footer {
-  font-size: 0.9rem;
-}
 footer .container {
   margin-top: 10rem;
   margin-bottom: 0;
@@ -75,16 +72,15 @@ footer .container {
     margin-bottom: 3rem;
   }
 }
-footer p {
-  font-size: 1.5rem;
+footer .title {
+  font-size: 1.7rem;
   font-weight: 400;
 }
-footer p span {
-  font-size: 0.8rem;
+footer .title span {
+  font-size: 60%;
   color: #b70f0f;
 }
 footer .list-unstyled {
-  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 @media only screen and (min-width: 576px) {
@@ -92,15 +88,25 @@ footer .list-unstyled {
     margin-bottom: 0;
   }
 }
-footer li a {
+footer ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer li {
   color: rgba(0, 0, 0, 0.871);
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero h2 {
-  font-size: 1rem !important;
+  font-size: 1.8rem !important;
   margin-top: 4rem;
   margin-bottom: 1rem;
+  font-weight: 200;
 }
 
 .trabajos {
@@ -122,7 +128,6 @@ footer li a {
 .trabajos .trabajos-video {
   margin: 2rem auto;
   position: relative;
-  aspect-ratio: 16/9;
 }
 .trabajos .trabajos-video video {
   width: 100%;
@@ -176,9 +181,22 @@ footer li a {
 }
 .trabajos .trabajos-video-back {
   position: relative;
+  margin-bottom: 5rem;
 }
 .trabajos .trabajos-video-back video {
-  width: 100%;
+  height: 450px;
+  background-size: cover;
+}
+@media only screen and (min-width: 576px) {
+  .trabajos .trabajos-video-back video {
+    height: 550px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .trabajos .trabajos-video-back video {
+    width: 100%;
+    height: auto;
+  }
 }
 .trabajos .trabajos-video-back .video-texto {
   width: 100%;
@@ -191,41 +209,49 @@ footer li a {
   color: white;
   padding: 1rem 0.5rem 0rem 0.5rem;
 }
+.trabajos .trabajos-video-back .video-texto .texto {
+  width: 100%;
+  margin: 0 auto;
+}
 @media only screen and (min-width: 420px) {
-  .trabajos .trabajos-video-back .video-texto {
-    padding: 1.5rem 2rem 0rem 2rem;
+  .trabajos .trabajos-video-back .video-texto .texto {
+    width: 90%;
   }
 }
 @media only screen and (min-width: 576px) {
-  .trabajos .trabajos-video-back .video-texto {
-    padding: 4rem 4rem 0rem 4rem;
+  .trabajos .trabajos-video-back .video-texto .texto {
+    margin-top: 3rem;
+    width: 80%;
   }
 }
 @media only screen and (min-width: 768px) {
-  .trabajos .trabajos-video-back .video-texto {
-    padding: 4.5rem 5rem 0rem 5rem;
+  .trabajos .trabajos-video-back .video-texto .texto {
+    margin-top: 4rem;
+    width: 70%;
   }
 }
 @media only screen and (min-width: 992px) {
-  .trabajos .trabajos-video-back .video-texto {
-    padding: 8rem 7rem 0rem 7rem;
+  .trabajos .trabajos-video-back .video-texto .texto {
+    margin-top: 4rem;
+    width: 60%;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .trabajos .trabajos-video-back .video-texto {
-    padding: 12rem 10rem 0rem 10rem;
+  .trabajos .trabajos-video-back .video-texto .texto {
+    margin-top: 10rem;
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .trabajos .trabajos-video-back .video-texto .texto {
+    margin-top: 15rem;
+    width: 50%;
   }
 }
 .trabajos .trabajos-video-back .video-texto h3 {
   font-weight: 400;
-  font-size: 2rem;
-  margin: 0.5rem auto 1rem auto;
-}
-@media only screen and (min-width: 420px) {
-  .trabajos .trabajos-video-back .video-texto h3 {
-    font-size: 2.2rem;
-    margin: 0.5rem auto 1rem auto;
-  }
+  font-size: 2.5rem;
+  margin: 3rem auto 1rem auto;
 }
 @media only screen and (min-width: 576px) {
   .trabajos .trabajos-video-back .video-texto h3 {
@@ -235,13 +261,19 @@ footer li a {
 }
 @media only screen and (min-width: 768px) {
   .trabajos .trabajos-video-back .video-texto h3 {
-    font-size: 4.8rem;
+    font-size: 4.2rem;
     margin: 0.8rem auto 1rem auto;
   }
 }
 @media only screen and (min-width: 992px) {
   .trabajos .trabajos-video-back .video-texto h3 {
     font-size: 6rem;
+    margin: 0.8rem auto 1rem auto;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .trabajos .trabajos-video-back .video-texto h3 {
+    font-size: 7rem;
     margin: 0.8rem auto 1rem auto;
   }
 }
@@ -252,8 +284,8 @@ footer li a {
 }
 .trabajos .trabajos-video-back .video-texto p {
   font-weight: 200;
-  margin: 2rem auto;
-  font-size: 0.8rem;
+  margin: 3rem auto;
+  font-size: 0.9rem;
 }
 @media only screen and (min-width: 420px) {
   .trabajos .trabajos-video-back .video-texto p {
@@ -267,10 +299,20 @@ footer li a {
 }
 @media only screen and (min-width: 768px) {
   .trabajos .trabajos-video-back .video-texto p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 992px) {
+  .trabajos .trabajos-video-back .video-texto p {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .trabajos .trabajos-video-back .video-texto p {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
   .trabajos .trabajos-video-back .video-texto p {
     font-size: 2rem;
   }
@@ -308,6 +350,9 @@ footer li a {
   letter-spacing: 12px;
 }
 
+.nosotros {
+  margin-top: 8rem;
+}
 .nosotros .nosotros-card-img {
   position: relative;
 }
@@ -324,7 +369,7 @@ footer li a {
 }
 .nosotros img {
   border-radius: 3px !important;
-  height: 450px;
+  aspect-ratio: 9/10;
 }
 .nosotros .card {
   border: none !important;
@@ -345,9 +390,6 @@ footer li a {
   border-radius: 0 !important;
   transition: 0.5s;
 }
-.servicios .card:hover {
-  filter: opacity(0.7);
-}
 .servicios .servicios-card-img {
   position: relative;
   display: flex;
@@ -363,7 +405,7 @@ footer li a {
   color: white;
   position: absolute;
   z-index: 99;
-  background-color: rgba(0, 0, 0, 0.529);
+  background-color: #000000c4;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 200;
